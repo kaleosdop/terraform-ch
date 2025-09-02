@@ -11,15 +11,6 @@ Aplikasi yang dideploy hanya berupa halaman HTML berisi teks **"Hello World"** y
 - **User Data** digunakan untuk otomatisasi instalasi Apache, cloning repository, dan menyalin file HTML ke web root.  
 - **GitHub** digunakan untuk menyimpan file `challenge.html`.
 
-## 📂 Struktur Project
-.
-├── README.md
-├── challenge.html
-├── main.tf
-└── user_data.sh
-
-bash
-Copy code
 
 ## ⚙️ Langkah Deployment
 1. Buat folder/project baru di Cloud9 atau local environment.  
