@@ -27,32 +27,27 @@ Copy code
 
 ```html
 <h1>Hello World</h1>
-Push project ini ke repository GitHub.
+```
 
-Jalankan terraform init untuk inisialisasi Terraform.
+3. Push project ini ke repository GitHub.  
+4. Jalankan `terraform init` untuk inisialisasi Terraform.  
+5. Jalankan `terraform plan` untuk melihat rencana deployment.  
+6. Jalankan `terraform apply` untuk membuat resource di AWS.  
 
-Jalankan terraform plan untuk melihat rencana deployment.
+Terraform akan otomatis membuat:  
+- EC2 instance  
+- Security Group (allow HTTP 80)  
+- Apache Web Server  
+- Deployment file `challenge.html`  
 
-Jalankan terraform apply untuk membuat resource di AWS.
+7. Akses **Public IP** EC2 di browser → akan muncul `Hello World`.  
 
-Terraform akan otomatis membuat:
+---
 
-EC2 instance
+## ✅ Ekspektasi Output
 
-Security Group (allow HTTP 80)
-
-Apache Web Server
-
-Deployment file challenge.html
-
-Akses Public IP EC2 di browser → akan muncul Hello World.
-
-✅ Ekspektasi Output
-Setelah terraform apply, hasil yang diharapkan:
-
-EC2 instance berjalan.
-
-Apache aktif dan melayani request HTTP.
-
-Browser menampilkan tulisan Hello World.
+Setelah menjalankan `terraform apply`, hasil yang diharapkan:  
+- EC2 instance berjalan.  
+- Apache aktif dan melayani request HTTP.  
+- Browser menampilkan tulisan **Hello World**.  
 
